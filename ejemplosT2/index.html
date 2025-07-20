@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja tarea 2</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <body>
+
+   <!-- Encabezado principal -->
+  <header class="encabezado">
+    <h1>Manual CSS - Tarea 2</h1>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="navegacion">
+    <ul>
+      <li><a href="#boxmodel">Box Model</a></li>
+      <li><a href="#display">Display</a></li>
+      <li><a href="#position">Position</a></li>
+      <li><a href="#flexbox">Flexbox</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor general: contenido principal + barra lateral -->
+  <div class="contenedor-principal">
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+
+      <!-- Sección 1: Box Model -->
+      <section id="boxmodel">
+        <h2>2.1 Box Model</h2>
+        <div class="boxModel">Box Model</div>
+      </section>
+
+      <!-- Sección 2: Display -->
+      <section id="display">
+        <h2>Elementos en Bloque vs En Línea</h2>
+        <div class="bloque">Elemento de bloque (div)</div>
+        <span class="inline">Elemento en línea (span)</span>
+        <span class="inline">Otro span</span>
+
+        <h3>Usando display</h3>
+        <div class="bloque2">Elemento de bloque (div)</div>
+        <span class="inline2">Elemento en línea (span)</span>
+        <span class="inline2">Otro span</span>
+
+        <h3>Otros ejemplos</h3>
+        <div class="bloque3">Elemento bloque 1</div>
+        <div class="bloque3">Elemento bloque 2</div>
+        <span class="enlinea">Texto 1</span>
+        <span class="enlinea">Texto 2</span>
+        <div class="oculto">Este texto no se verá</div>
+      </section>
+
+      <!-- Sección 3: Position -->
+      <section id="position">
+        <h2>2.2 Posicionamiento en CSS</h2>
+
+        <h3>visibility vs display</h3>
+        <div class="visible">Visible</div>
+        <div class="oculto">Oculto (visibility)</div>
+        <div class="ninguno">Oculto (display)</div>
+
+        <h3>overflow</h3>
+        <div class="contenedor">Este texto es muy largo y se desborda del contenedor.</div>
+
+        <h3>z-index</h3>
+        <div class="contenedor-z">
+          <div class="capa capa1">Capa 1</div>
+          <div class="capa capa2">Capa 2</div>
+        </div>
+
+        <h3>position</h3>
+        <div class="static">static</div>
+        <div class="relative">relative</div>
+        <div class="absolute">absolute</div>
+        <div class="fixed">fixed</div>
+      </section>
+
+      <!-- Sección 4: Flexbox -->
+      <section id="flexbox">
+        <h2>2.3 Flexbox</h2>
+        <div class="contenedor-flex">
+          <div class="caja1">1</div>
+          <div class="caja1">2</div>
+          <div class="caja1">3</div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <h3>Guía de CSS</h3>
+      <ul>
+        <li>Modelo de Caja</li>
+        <li>Display</li>
+        <li>Position</li>
+        <li>Flexbox</li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <p>&copy; 2025 Tarea 2 - Roberto Urbina</p>
+  </footer>
+
+</body>
+</html>
